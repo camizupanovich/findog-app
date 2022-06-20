@@ -1,0 +1,75 @@
+.card{
+    position: relative;
+    width: 200px;
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+    margin: 30px;
+    background-color: white;
+    box-shadow: 1px -2px 5px rgb(184, 184, 184);
+}
+.cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: load 2s ease infinite;
+}
+@keyframes load {
+    0%{background: none;}
+    50%{background-color: rgba(160, 160, 160, 0.433);}
+    100%{background:none}
+}
+.img{
+   width: 200px;
+   max-height: 200px;
+}
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.name{
+    width: 120px ;
+    height: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    background-color: #d4d3d3;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.weight{
+    width: 80px ;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: #dfdfdf;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.tempsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+.temps{
+    margin: 3px;
+    width: 50px;
+    height: 13px;
+    background-color: #dfdfdf;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width:1130px){
+    .card{
+        margin: 15px;
+    }
+}

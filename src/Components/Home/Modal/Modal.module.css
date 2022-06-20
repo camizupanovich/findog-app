@@ -1,0 +1,33 @@
+.container{
+    position: absolute;
+    width: 100vh;
+    height: 100vh;
+    background-color: #1e90ff;
+}
+.sections{
+    color: white;
+    margin: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.containerClose{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.closeBtn{
+    background: none;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 40px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+}

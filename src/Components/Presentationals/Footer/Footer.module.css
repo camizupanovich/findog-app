@@ -1,0 +1,10 @@
+.container{
+    position: relative;
+    height: 80px;
+    background-color: rgb(106, 106, 106);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}

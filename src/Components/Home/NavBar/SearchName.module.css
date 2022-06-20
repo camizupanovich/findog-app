@@ -1,0 +1,33 @@
+.form{
+    background-color: white;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 15px;
+    margin: 0px 10px;
+}
+.input{
+    background: none;
+    border: none;
+    color: #1e90ff;
+    outline: none;
+}
+.btn{
+    background: none;
+    border: none;
+    outline: none;
+    color: #1e90ff;
+    font-size: 15px;
+}
+/*#1e90ff*/
+@media only screen and (max-width:450px){
+    .form{
+        padding: 2px 2px;
+        height: 20px;
+    }
+    .input{
+        max-width: 200px;
+    }
+}

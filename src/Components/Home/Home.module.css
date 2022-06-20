@@ -1,0 +1,71 @@
+.body{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    justify-content: space-between;
+    background-color: white;
+    padding-bottom: 20vh;
+}
+.fixFilters{
+    height: 100%;
+    padding: 30px;
+    background-color: white;
+    border: 10px solid white;
+}
+.gridCards{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 50px;
+    border: 10px solid white;
+    background-color: rgb(237, 237, 237);
+    border-radius: 50px;
+}
+.paginateContainer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30%;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.btnPaginate{
+    padding: 5px 0px;
+    background: none;
+    border-radius: 30px;
+    color: #1e90ff;
+    font-size: 20px;
+    border: 1.5px solid #1e90ff;
+    transition: 1s;
+    cursor: pointer;
+    outline: none;
+}
+.btnPaginate:hover{
+    background-color: #1e90ff;
+    color: white;
+}
+@media only screen and (max-width:1130px){
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 10vh;
+    }
+    .fixFilters{
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-right: 0px;
+        padding-left: 0px;
+        border-bottom: 1px solid rgb(228, 228, 228);
+        background-color: white;
+    }
+    .navFix{
+        position: fixed;
+        top: 0px;
+        z-index: 1;
+        width: 100%;
+    }
+    .gridCards{
+        border: none;
+        background-color: white;
+    }
+}

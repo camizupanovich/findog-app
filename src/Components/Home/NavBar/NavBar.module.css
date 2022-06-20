@@ -1,0 +1,86 @@
+.Bar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    background-color:#1e90ff;
+    height: 10vh;
+    z-index: 2;
+}
+.openFilters{
+    display: none;
+}
+.create{
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    font-size: 25px;
+}
+.link{
+    text-decoration: none;
+}
+.sections{
+    color: white;
+    background: none;
+    outline: none;
+    font-size: 15px;
+    border: none;
+}
+.logo{
+    height: 60px;
+    margin-left: 60px;
+}
+.BarEnd{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 700px;
+}
+.modal{
+    position:absolute;
+    z-index: 0;
+    background-color: #1e90ff;
+}
+@media only screen and (max-width:1130px){
+    .Bar{
+        box-shadow: 0px 1px 10px #1e90ff;
+    }
+    .logo{
+        margin-left: 10px;
+        height: 50px;
+    }
+    .sections{
+        font-size: 14px;
+    }
+    .BarEnd{
+        width:460px ;
+    }
+}
+
+
+@media only screen and (max-width:560px){
+    .openFilters{
+        display: flex;
+        background: none;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 20px;
+    }
+    .logo{
+        display: none;
+    }
+    .sections{
+        display: none;
+    }
+    .BarEnd{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .create{
+        font-size: 20px;
+    }
+}

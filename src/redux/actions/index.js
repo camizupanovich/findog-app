@@ -14,7 +14,7 @@ export const actions ={
 export function getDogs() {
     return async function (dispatch) {
       dispatch(loading())
-      var json = await axios.get("https://findog-server.vercel.app/dogs", {});
+      var json = await axios.get("https://dog-server-y5k1.onrender.com/dogs", {});
       return dispatch({
         type: actions.GET_DOGS,
         payload: json.data,
@@ -24,7 +24,7 @@ export function getDogs() {
 
 export function getDog(id){
     return async(dispatch)=>{
-        let info = await axios.get(`https://findog-server.vercel.app/dogs/${id}`);
+        let info = await axios.get(`https://dog-server-y5k1.onrender.com/dogs/${id}`);
         return dispatch({
             type: actions.GET_DOG,
             payload: info.data,
@@ -34,7 +34,7 @@ export function getDog(id){
 
 export function postDog(input){
     return async(dispatch)=>{
-        let response = axios.post('https://findog-server.vercel.app/dog',input);
+        let response = axios.post('https://dog-server-y5k1.onrender.com/dog',input);
         return dispatch({
             type: actions.POST_DOG,
         })
@@ -43,7 +43,7 @@ export function postDog(input){
 
 export function getDogName(name){
     return async (dispatch)=>{
-        let info = await axios.get(`https://findog-server.vercel.app/dogs?name=${name}`);
+        let info = await axios.get(`https://dog-server-y5k1.onrender.com/dogs?name=${name}`);
             return dispatch({
                 type: actions.GET_DOG_NAME,
                 payload: info.data
@@ -53,7 +53,7 @@ export function getDogName(name){
 
 export function getTemperaments(){
     return async (dispatch)=>{
-        let temp = await axios.get('https://findog-server.vercel.app/temperaments',{});
+        let temp = await axios.get('https://dog-server-y5k1.onrender.com/temperaments',{});
         return dispatch({
             type: actions.GET_TEMPERAMENTS,
             payload:temp.data,
